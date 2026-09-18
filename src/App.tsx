@@ -1,11 +1,10 @@
 import Navbar from "./components/Navbar";
-
+import Hero from "./pages/Hero";
 function App() {
 	return (
 		<div>
 			<Navbar />
-			Hello, Vite!
-			<div>Hi</div>
+			<Hero />
 		</div>
 	);
 }

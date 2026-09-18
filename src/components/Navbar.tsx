@@ -64,7 +64,7 @@ function Navbar() {
 							</Button>
 						))}
 						<Button variant="contained" color="secondary" sx={{ ml: 1 }}>
-							Book Now
+							Get a Quote
 						</Button>
 					</Box>
 
