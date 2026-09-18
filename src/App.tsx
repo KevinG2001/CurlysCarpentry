@@ -1,11 +1,14 @@
+import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Hero";
+import Services from "./pages/Services";
 function App() {
 	return (
-		<div>
+		<Container maxWidth={false} disableGutters>
 			<Navbar />
 			<Hero />
-		</div>
+			<Services />
+		</Container>
 	);
 }
 
