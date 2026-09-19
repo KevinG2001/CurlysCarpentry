@@ -46,15 +46,15 @@ function Gallery() {
 	const cols = isMd ? 5 : isSm ? 3 : 2;
 	return (
 		<Container maxWidth="lg" sx={{ py: 8 }}>
+			<Typography
+				variant="h3"
+				sx={{ color: "secondary.light", textAlign: "center", mb: 5 }}
+			>
+				Gallery
+			</Typography>
 			<Box
 				sx={{ bgcolor: "primary.main", p: 2, boxShadow: 6, borderRadius: 2 }}
 			>
-				<Typography
-					variant="h3"
-					sx={{ color: "secondary.light", textAlign: "center", mb: 5 }}
-				>
-					Gallery
-				</Typography>
 				{categories.map((category) => (
 					<Chip
 						key={category}
