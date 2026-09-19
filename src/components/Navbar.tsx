@@ -11,7 +11,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 
-const pages = ["Home", "Services", "Portfolio"];
+const pages = ["Home", "About", "Services", "Gallery"];
 
 function Navbar() {
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
