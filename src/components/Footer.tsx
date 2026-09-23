@@ -114,9 +114,8 @@ function Footer() {
 
 				<Stack
 					direction={{ xs: "column", sm: "row" }}
-					justifyContent="space-between"
-					alignItems="center"
 					spacing={1}
+					sx={{ justifyContent: "space-between", alignItems: "center" }}
 				>
 					<Typography variant="body2" sx={{ color: "primary.light" }}>
 						© {new Date().getFullYear()} Curlys Carpentry. All rights reserved.

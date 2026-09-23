@@ -51,10 +51,15 @@ const theme = createTheme({
 				root: {
 					borderRadius: 8,
 				},
-				containedSecondary: {
-					"&:hover": { backgroundColor: "#9C4E22" },
-				},
 			},
+			variants: [
+				{
+					props: { variant: "contained", color: "secondary" },
+					style: {
+						"&:hover": { backgroundColor: "#9C4E22" },
+					},
+				},
+			],
 		},
 		MuiCard: {
 			styleOverrides: {
