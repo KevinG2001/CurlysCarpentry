@@ -45,7 +45,7 @@ function Gallery() {
 	const isSm = useMediaQuery(theme.breakpoints.up("sm"));
 	const cols = isMd ? 5 : isSm ? 3 : 2;
 	return (
-		<Container maxWidth="lg" sx={{ py: 8 }}>
+		<Container id="gallery" maxWidth="lg" sx={{ py: 8 }}>
 			<Typography
 				variant="h3"
 				sx={{ color: "secondary.light", textAlign: "center", mb: 5 }}

@@ -34,6 +34,7 @@ interface ServiceCardProps {
 function ServiceCard({ icon: Icon, title, description }: ServiceCardProps) {
 	return (
 		<Card
+			id="services"
 			sx={{
 				bgcolor: "primary.main",
 				borderRadius: 2,

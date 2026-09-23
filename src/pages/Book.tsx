@@ -9,7 +9,7 @@ import {
 
 function Book() {
 	return (
-		<Container maxWidth="sm" sx={{ py: 8 }}>
+		<Container id="book" maxWidth="sm" sx={{ py: 8 }}>
 			<Typography
 				variant="h3"
 				sx={{ color: "secondary.light", textAlign: "center", mb: 5 }}

@@ -11,7 +11,12 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import React from "react";
 
-const pages = ["Home", "About", "Services", "Gallery"];
+const pages = [
+	{ label: "Home", id: "home" },
+	{ label: "About", id: "about" },
+	{ label: "Services", id: "services" },
+	{ label: "Gallery", id: "gallery" },
+];
 
 function Navbar() {
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -56,14 +61,22 @@ function Navbar() {
 					>
 						{pages.map((page) => (
 							<Button
-								key={page}
+								key={page.id}
+								component="a"
+								href={`#${page.id}`}
 								onClick={handleCloseNavMenu}
 								sx={{ color: "inherit" }}
 							>
-								{page}
+								{page.label}
 							</Button>
 						))}
-						<Button variant="contained" color="secondary" sx={{ ml: 1 }}>
+						<Button
+							variant="contained"
+							color="secondary"
+							component="a"
+							href="#book"
+							sx={{ ml: 1 }}
+						>
 							Get a Quote
 						</Button>
 					</Box>
@@ -99,8 +112,15 @@ function Navbar() {
 							onClose={handleCloseNavMenu}
 						>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography sx={{ textAlign: "center" }}>{page}</Typography>
+								<MenuItem
+									key={page.id}
+									component="a"
+									href={`#${page.id}`}
+									onClick={handleCloseNavMenu}
+								>
+									<Typography sx={{ textAlign: "center" }}>
+										{page.label}
+									</Typography>
 								</MenuItem>
 							))}
 						</Menu>

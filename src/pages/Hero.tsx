@@ -4,6 +4,7 @@ import HeroImg from "../assets/Hero.jpg";
 export default function Hero() {
 	return (
 		<Box
+			id="home"
 			sx={{
 				position: "relative",
 				width: "100%",
